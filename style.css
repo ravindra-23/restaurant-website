@@ -328,3 +328,112 @@ a {
 	color: var(--secondary-color);
 	opacity: 0.8;
 }
+
+/* ABOUT US SECTION */
+
+.about-us {
+	display: flex;
+	min-height: 720px;
+	overflow: hidden;
+}
+
+.about-us_images {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex: 1;
+	position: relative;
+}
+
+.about-us_image-sushi3 {
+	background-color: var(--color-white);
+	padding: 32px 64px;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	background-image: url('assets/about_bg1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-bottom: 8px solid var(--color-creamson);
+}
+
+.about-us_image-sushi2 {
+	background-image: url('assets/about_bg2.png');
+	background-color: var(--color-white);
+	padding: 32px 64px;
+	display: flex;
+	flex: 1;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.about-us_image-sushi3 img {
+	width: 225px;
+	height: 200px;
+}
+
+.about-us_image-sushi2 img {
+	width: 240px;
+	height: 160px;
+}
+
+.about-us_button {
+	position: absolute;
+	right: 0;
+	padding: 12px 32px;
+	min-height: 64px;
+	background: var(--secondary-color);
+	border-radius: 32px 0 0 32px;
+	border: 0;
+	outline: 0;
+	color: #fff;
+	font-family: var(--plus-jakarta-sans);
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	cursor: pointer;
+}
+
+.about-us_button:hover {
+	background-color: var(--primary-color);
+	transition: all 0.4s ease-in-out;
+}
+
+.about-us_content {
+	padding: 64px;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.sushi_subtitle {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: var(--plus-jakarta-sans);
+	color: var(--primary-color);
+	opacity: 0.8;
+  	letter-spacing: -0.01em;
+}
+
+.sushi_title {
+	font-size: 64px;
+	font-weight: 600;
+	font-family: var(--playfair-display);
+	color: var(--secondary-color);
+	margin-top: 16px;
+}
+  
+.sushi_description {
+	font-size: 18px;
+	font-weight: 400;
+	font-family: var(--plus-jakarta-sans);
+	line-height: 36px;
+	letter-spacing: -0.01em;
+	color: var(--secondary-color);
+	opacity: 0.8;
+	margin: 32px 0px;
+}
