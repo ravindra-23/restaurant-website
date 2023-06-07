@@ -437,3 +437,355 @@ a {
 	opacity: 0.8;
 	margin: 32px 0px;
 }
+
+/* POPULAR FOODS */
+
+.popular-foods {
+	display: flex;
+	flex-direction: column;
+	padding: 64px;
+	background-color: var(--primary-color);
+	background-image: url('assets/popular_bg.png');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	overflow: hidden;
+}
+
+.popular-foods_title {
+	font-size: 56px;
+	font-family: var(--playfair-display);
+	font-weight: 600;
+	line-height: 78px;
+	color: #fff;
+	text-align: center;
+}
+
+.popular-foods_filters {
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	gap: 64px;
+	overflow: auto;
+}
+
+.popular-foods_filters_btn {
+	padding: 10px 28px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	gap: 10px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	font-size: 16px;
+	font-weight: 300px;
+	line-height: 25px;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+	cursor: pointer;
+}
+
+.popular-foods_filters_btn img {
+	width: 36px;
+	height: 36px;
+	object-fit: contain;
+}
+
+.popular-foods_filters_btn.active {
+	background: #fff;
+	color: var(--primary-color)
+}
+  
+.popular-foods_filters_btn:hover {
+	background: #fff;
+	color: var(--primary-color);
+	transition: all 0.4s ease-in-out;
+}
+
+.popular-foods_catalogue {
+	margin-top: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	flex-wrap: wrap;
+	gap: 55px;
+}
+
+.popular-foods_button {
+	width: fit-content;
+	padding: 20px 30px;
+	margin: 80px auto 0;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 23px;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+	border: none;
+	outline: none;
+	background: var(--secondary-color);
+	border-radius: 64px;
+	cursor: pointer;
+}
+  
+.popular-foods_button img {
+	width: 14px;
+	height: 14px;
+	object-fit: contain;
+	margin-left: 21px;
+}
+
+.popular-foods_card {
+	padding: 38px;
+	min-width: 260px;
+	height: fit-content;
+  
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+  
+	border-radius: 36px;
+	background: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.popular-foods_card-image {
+	width: 110px;
+	height: 84px;
+	object-fit: contain;
+}
+
+.popular-foods_card-title {
+	margin-top: 47px;
+  
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 32px;
+	font-family: var(--playfair-display);
+	color: #fff;
+	text-align: center;
+}
+  
+.popular-foods_card-details {
+	width: 100%;
+	margin-top: 32px;
+}
+
+.popular-foods_card-rating {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+  
+.popular-foods_card-rating img {
+	width: 24px;
+	height: 24px;
+	object-fit: contain;
+}
+  
+.popular-foods_card-rating p {
+	font-size: 20px; 
+	font-weight: 300;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+}
+
+.popular-foods_card-price {
+	font-size: 20px; 
+	font-weight: 500;
+	font-family: var(--plus-jakarta-sans);
+	color: #fff;
+}
+
+.popular-foods_card.active-card {
+	background: #fff;
+	min-width: 340px;
+}
+  
+.popular-foods_card.active-card .popular-foods_card-image {
+	width: 214px;
+	height: 160px;
+}
+  
+.popular-foods_card.active-card .popular-foods_card-title {
+	color: var(--black-500);
+	font-size: 32px;
+}
+  
+.popular-foods_card.active-card .popular-foods_card-rating img {
+	width: 32px;
+	height: 32px;
+}
+  
+.popular-foods_card.active-card .popular-foods_card-rating p {
+	font-size: 24px;
+	color: var(--gray-100);
+}
+  
+.popular-foods_card.active-card .popular-foods_card-price {
+	font-size: 24px;
+	color: var(--secondary-color)
+}
+
+/* TRENDING SECTION */
+
+.trending {
+	position: relative;
+  
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+  }
+  
+  .trending__discover {
+	position: absolute;
+	top: 44%;
+	left: 44%;
+	z-index: 1;
+  
+	width: 160px;
+	height: 160px;
+  
+	border-radius: 100%;
+	background-color: var(--secondary-color);
+	cursor: pointer;
+  
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .trending__discover p {
+	font-size: 18px;
+	font-weight: 500;
+	font-family: var(--plus-jakarta-sans);
+  
+	text-transform: uppercase;
+	color: #fff;
+  }
+  
+  .trending-sushi,
+  .trending-drinks {
+	width: 100%;
+	min-height: 640px;
+  
+	display: flex;
+	flex-direction: row;
+  }
+  
+  .trending__content {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+  
+	padding: 32px 64px;
+  }
+  
+  .trending__list {
+	list-style: none;
+  
+	flex-wrap: wrap;
+	gap: 20px;
+  }
+  
+  .trending__list li {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	gap: 12px;
+  
+	min-width: 210px;
+  }
+  
+  .trending__icon {
+	width: 24px;
+	height: 24px;
+  
+	border-radius: 100%;
+	background-color: var(--primary-color);
+  }
+  
+  .trending__icon img {
+	width: 50%;
+	height: 50%;
+	object-fit: contain;
+  }
+  
+  .trending__list p {
+	flex: 1;
+	font-size: 16px;
+	font-weight: 500;
+	font-family: var(--plus-jakarta-sans);
+  
+	color: var(--secondary-color);
+  }
+  
+  .trending__image {
+	flex: 1;
+  
+	position: relative;
+	padding: 32px 64px;
+  
+	background-color: var(--color-white);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+  }
+  
+  .trending-sushi .trending__image {
+	background-image: url("../../assets/japanese_sushi.png");
+  }
+  
+  .trending-drink .trending__image {
+	background-image: url("../../assets/japanese_drinks.png");
+  }
+  
+  .trending__image img {
+	width: 254px;
+	height: 260px;
+	object-fit: contain;
+  }
+  
+  /* Arrows */
+  .trending__arrow {
+	position: absolute;
+	z-index: 1;
+  }
+  
+  .trending__arrow img {
+	object-fit: contain;
+  }
+  
+  .trending__arrow-left {
+	left: -2.5px;
+	top: 12%;
+  }
+  
+  .trending__arrow-left img,
+  .trending__arrow-top img {
+	width: auto;
+	height: 100%;
+  }
+  
+  .trending__arrow-top {
+	top: -10.5px;
+	left: 12%;
+  }
+  
+  .trending__arrow-bottom {
+	bottom: -6.5px;
+	right: 12%;
+  }
+  
+  .trending__arrow-bottom img,
+  .trending__arrow-right img {
+	width: 100%;
+	height: auto;
+  }
+  
+  .trending__arrow-right {
+	right: -2.5px;
+	bottom: 12%;
+  }
