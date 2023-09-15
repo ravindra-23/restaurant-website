@@ -132,6 +132,12 @@ a {
 	}
 }
 
+@media screen and (max-width: 550px) {
+	.nav_logo {
+	  padding-left: 0;
+	}
+}
+
 
 /* HERO SECTION */
 
@@ -329,6 +335,54 @@ a {
 	opacity: 0.8;
 }
 
+/* Hero Media queries */
+
+@media screen and (max-width: 1060px) {
+	.hero {
+	  flex-direction: column;
+	}
+  
+	.hero_image img {
+	  width: 100%;
+  
+	  transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+	}
+  }
+  
+  @media screen and (max-width: 750px) {
+	.hero_image h2 {
+	  font-size: 70px;
+	  line-height: 90px;
+	}
+  }
+
+@media screen and (max-width: 550px) {
+	.hero_image h2 {
+	  font-size: 40px;
+	  line-height: 60px;
+	}
+  
+	.hero_content-info {
+	  padding: 32px;
+	}
+  
+	.hero_content-info h1 {
+	  font-size: 60px;
+	}
+  
+	.hero_content-info p {
+	  margin: 32px 0;
+	}
+  
+	.hero_content-buttons {
+	  margin: 41px 0;
+	}
+  
+	.hero_content-testimonial {
+	  padding: 32px;
+	}
+  }
+
 /* ABOUT US SECTION */
 
 .about-us {
@@ -437,6 +491,65 @@ a {
 	opacity: 0.8;
 	margin: 32px 0px;
 }
+
+/* About Us Media Queries */
+
+@media screen and (max-width: 1024px) {
+	.about-us {
+	  flex-direction: column;
+	}
+  
+	.about-us_images {
+	  flex-direction: row;
+	}
+  
+	.about-us_image-sushi3 {
+	  border-bottom: none;
+	  border-right: 8px solid var(--color-creamson);
+	}
+  
+	.about-us_button {
+	  display: none;
+	}
+  }
+  
+  @media screen and (max-width: 750px) {
+	.about-us_images {
+	  flex-direction: column;
+	}
+  
+	.about-us_image-sushi3 {
+	  border-bottom: 8px solid var(--color-creamson);
+	  border-right: none;
+	}
+  
+	.about-us_button {
+	  display: block;
+	  top: 47%;
+	}
+  }
+  
+  @media screen and (max-width: 550px) {
+	.about-us_image-sushi2 img,
+	.about-us_image-sushi3 img {
+	  width: 50%;
+	  height: 160px;
+  
+	  object-fit: contain;
+	}
+  
+	.about-us_images div {
+	  padding: 32px;
+	}
+  
+	.about-us_button {
+	  top: 44%;
+	}
+  
+	.about-us_content {
+	  padding: 32px;
+	}
+  }
 
 /* POPULAR FOODS */
 
@@ -627,6 +740,19 @@ a {
 	color: var(--secondary-color)
 }
 
+/* Popular foods Media Queries */
+
+@media screen and (max-width: 550px) {
+	.popular-foods {
+	  padding: 64px 32px;
+	}
+  
+	.popular-foods_card,
+	.popular-foods_card.active-card {
+	  min-width: 100%;
+	}
+}
+
 /* TRENDING SECTION */
 
 .trending {
@@ -790,6 +916,42 @@ a {
 	bottom: 12%;
 }
 
+/* Trending Media Queries */
+
+@media screen and (max-width: 1024px) {
+	.trending-sushi {
+	  flex-direction: column;
+	}
+  
+	.trending-drinks {
+	  flex-direction: column-reverse;
+	}
+  
+	.trending__image {
+	  width: 100%;
+	  background-size: cover;
+	}
+  
+	.trending__discover {
+	  display: none;
+	}
+  
+	.trending__arrow {
+	  display: none;
+	}
+}
+  
+  @media screen and (max-width: 550px) {
+	.trending__image img {
+	  width: 70%;
+	  height: 70%;
+	}
+  
+	.trending__content {
+	  padding: 32px;
+	}
+  }
+
 /* SUBSCRIBE SECTION */
 
 .subscription {
@@ -877,6 +1039,42 @@ a {
   
 	cursor: pointer;
 }
+
+/* Subscribe Media Queries */
+
+@media screen and (max-width: 550px) {
+	.subscription {
+	  padding: 64px 32px;
+	}
+  
+	.subscription h2 {
+	  font-size: 68px;
+	  line-height: 100px;
+	}
+  
+	.subscription__form {
+	  flex-direction: column;
+	  gap: 20px;
+  
+	  min-width: 100%;
+	  border-radius: 20px;
+	  padding: 0;
+  
+	  border: none;
+	}
+  
+	.subscription__form input {
+	  min-height: 50px;
+  
+	  border: 1px solid rgba(255, 255, 255, 0.5);
+	  padding: 10px 20px;
+	  border-radius: 30px;
+	}
+  
+	.subscription__form button {
+	  min-width: 100%;
+	}
+  }
 
 /* FOOTER SECTION */
 
