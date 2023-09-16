@@ -124,17 +124,26 @@ a {
 	}
   
 	.header_menu {
-	  display: none;
+	  flex-direction: column;
+	  position: absolute;
+	  top: 3rem;
+	  right: 2rem;
+	  justify-content: space-between;
+	  z-index: 999;
+	  width: 50%;
+	  height: 60%;
+	  background-color: var(--color-creamson);
+	  border-radius: 10px;
+	  transform: translateX(120%);
+      transition: transform 500ms ease-in-out;
 	}
+
+	.header_menu[data-visible="true"] {
+        transform: translateX(0);
+    }
   
 	.header_menu-mobile {
 	  display: flex;
-	}
-}
-
-@media screen and (max-width: 550px) {
-	.nav_logo {
-	  padding-left: 0;
 	}
 }
 
